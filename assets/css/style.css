@@ -1,0 +1,239 @@
+/* Reset default styles for consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+ul li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a container to center content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 20px;
+}
+.header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+.header .header-content .header-left {
+  flex-basis: 10%;
+}
+.header .header-content .header-left .logo {
+  max-width: 180px;
+}
+.header .header-content .header-left .logo img {
+  width: 100%;
+}
+.header .header-content .header-middle {
+  flex-basis: 80%;
+  text-align: center;
+}
+.header .header-content .header-middle .primary-menu {
+  margin-bottom: 20px;
+}
+.header .header-content .header-middle .primary-menu ul {
+  display: flex;
+  justify-content: center;
+}
+.header .header-content .header-middle .primary-menu ul li {
+  padding: 0 10px;
+}
+.header .header-content .header-middle .primary-menu ul li a {
+  color: #fff;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+.header .header-content .header-middle .primary-menu ul li a:hover {
+  color: #FF5400;
+}
+.header .header-content .header-middle .secondary-menu {
+  background: linear-gradient(to right, #08141A 10%, #33393D 100%);
+  padding: 20px 40px;
+  max-width: 530px;
+  margin: 0 auto;
+  border-radius: 100px;
+  position: relative;
+}
+.header .header-content .header-middle .secondary-menu ul {
+  display: flex;
+}
+.header .header-content .header-middle .secondary-menu ul li {
+  margin-right: 35px;
+}
+.header .header-content .header-middle .secondary-menu ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header .header-content .header-middle .secondary-menu ul li a i {
+  margin-right: 8px;
+}
+.header .header-content .header-middle .secondary-menu ul li a i.fa-chevron-down {
+  font-size: 8px;
+  padding-left: 5px;
+}
+.header .header-content .header-middle .secondary-menu ul li a:hover {
+  color: #FF5400;
+}
+.header .header-content .header-middle .secondary-menu .search-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  font-size: 16px;
+  border: none;
+  background: #FF5400;
+  color: #fff;
+  cursor: pointer;
+}
+.header .header-content .header-right {
+  flex-basis: 10%;
+}
+.header .header-content .header-right .right-menu ul {
+  display: flex;
+  align-items: center;
+}
+.header .header-content .header-right .right-menu ul li {
+  margin-right: 20px;
+}
+.header .header-content .header-right .right-menu ul li a {
+  color: #fff;
+}
+.header .header-content .header-right .right-menu ul li.dropdown {
+  width: 35px;
+  height: 35px;
+  background: #08141A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-content .header-right .right-menu ul li.dropdown a {
+  color: #295FB5;
+}
+
+.banner {
+  background: url("../images/Car Game Wallpaper Widescreen Wallpapers Wallpapers Collection.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+.banner .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3843137255);
+}
+.banner .banner-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: end;
+  z-index: 3;
+}
+.banner .banner-content .banner-content-left {
+  flex-basis: 60%;
+  color: #fff;
+}
+.banner .banner-content .banner-content-left .discount-time {
+  margin-bottom: 20px;
+}
+.banner .banner-content .banner-content-left .discount-time span {
+  background: #33393D;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 40px;
+  height: 20px;
+}
+.banner .banner-content .banner-content-left h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.banner .banner-content .banner-content-left .price {
+  display: flex;
+  align-items: center;
+}
+.banner .banner-content .banner-content-left .price span {
+  background: #FF5400;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 50px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.banner .banner-content .banner-content-left .price h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.banner .banner-content .banner-content-right {
+  flex-basis: 40%;
+}/*# sourceMappingURL=style.css.map */

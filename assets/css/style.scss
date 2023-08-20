@@ -1,0 +1,262 @@
+@import "./partials/variables";
+@import "./partials/mixin";
+@import "./partials/classes";
+@import "./partials/colors";
+@import "./partials/common";
+
+/* Reset default styles for consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Apply a container to center content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+//   HEADER
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 20px;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+    .header-left {
+      flex-basis: 10%;
+      .logo {
+        max-width: 180px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .header-middle {
+      flex-basis: 80%;
+      text-align: center;
+      .primary-menu {
+        margin-bottom: 20px;
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            padding: 0 10px;
+            a {
+              color: $white;
+              transition: all 0.3s;
+              text-transform: capitalize;
+
+              &:hover {
+                color: $orange;
+              }
+            }
+          }
+        }
+      }
+      .secondary-menu {
+        background: linear-gradient(to right, $dark-gray 10%, $light-gray 100%);
+        padding: 20px 40px;
+        max-width: 530px;
+        margin: 0 auto;
+        border-radius: 100px;
+        position: relative;
+        ul {
+          display: flex;
+          li {
+            margin-right: 35px;
+            a {
+              color: $white;
+              font-weight: 500;
+              font-size: 16px;
+              text-transform: capitalize;
+              transition: all 0.3s;
+              position: relative;
+              display: flex;
+              align-items: center;
+              i {
+                margin-right: 8px;
+              }
+
+              i.fa-chevron-down {
+                font-size: 8px;
+                padding-left: 5px;
+              }
+
+              &:hover {
+                color: $orange;
+              }
+            }
+          }
+        }
+        .search-btn {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translate(0, -50%);
+          border-radius: 100%;
+          width: 55px;
+          height: 55px;
+          font-size: 16px;
+          border: none;
+          background: $orange;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+    .header-right {
+      flex-basis: 10%;
+      .right-menu {
+        ul {
+          display: flex;
+          align-items: center;
+          li {
+            margin-right: 20px;
+            a {
+              color: $white;
+            }
+          }
+          li.dropdown {
+            width: 35px;
+            height: 35px;
+            background: $dark-gray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a{
+                color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// BANNER
+.banner {
+  background: url("../images/Car\ Game\ Wallpaper\ Widescreen\ Wallpapers\ Wallpapers\ Collection.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: #00000062;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: end;
+    z-index: 3;
+
+    .banner-content-left{
+        flex-basis: 60%;
+        color: $white;
+
+        .discount-time{
+            margin-bottom: 20px;
+            span {
+                background: $light-gray;
+                font-size: 14px;
+                padding: 5px;
+                border-radius: 5px;
+                text-transform: capitalize;
+                font-weight: 600;
+                width: 40px;
+                height: 20px;
+            }
+        }
+        
+        h1{
+            font-size: 40px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .price{
+            display: flex;
+            align-items: center;
+            span {
+                background: $orange;
+                font-size: 16px;
+                padding: 5px;
+                border-radius: 5px;
+                text-transform: capitalize;
+                font-weight: 600;
+                width: 50px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+            }
+            h2{
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+    .banner-content-right{
+        flex-basis: 40%;
+    }
+  }
+}
