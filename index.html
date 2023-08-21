@@ -37,23 +37,116 @@
             <div class="secondary-menu">
               <ul>
                 <li>
-                  <a href="#"><i class="fa-solid fa-desktop"></i>PC <i class="fa-solid fa-chevron-down"></i></a>
+                  <a href="#" class="dropdown"><i class="fa-solid fa-desktop"></i>PC <i class="fa-solid fa-chevron-down"></i></a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="#" class="dropdown"
                     ><i class="fa-brands fa-playstation"></i> playstation <i class="fa-solid fa-chevron-down"></i></a
                   >
                 </li>
                 <li>
-                  <a href="#"><i class="fa-brands fa-xbox"></i> xbox <i class="fa-solid fa-chevron-down"></i></a>
+                  <a href="#" class="dropdown"><i class="fa-brands fa-xbox"></i> xbox <i class="fa-solid fa-chevron-down"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa-solid fa-gamepad"></i> nintendo <i class="fa-solid fa-chevron-down"></i></a>
+                  <a href="#" class="dropdown"><i class="fa-solid fa-gamepad"></i> nintendo <i class="fa-solid fa-chevron-down"></i></a>
                 </li>
               </ul>
-              <button class="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+              <div class="search">
+                <input type="text" placeholder="Mine Craft, RPG, Multiplayer ..." class="search-input">
+                <button class="search-btn" id="search-btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <div class="dropdown-menu-card">
+                <div class="single-menu">
+                  <div class="dowpdown-title">
+                    <p>Platforms</p>
+                    <p><a href="#">View All</a></p>
+                  </div>
+                  <div class="grid-container">
+                    <a href="#">
+                      <div class="grid-item">
+                        <div class="icon">
+                          <img src="./assets/images/Electronic-Arts-Logo.svg.png" alt="">
+                        </div>
+                        <p>EA App</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="grid-item">
+                        <div class="icon">
+                          <img src="./assets/images/Electronic-Arts-Logo.svg.png" alt="">
+                        </div>
+                        <p>EA App</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="grid-item">
+                        <div class="icon">
+                          <img src="./assets/images/Electronic-Arts-Logo.svg.png" alt="">
+                        </div>
+                        <p>EA App</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="grid-item">
+                        <div class="icon">
+                          <img src="./assets/images/Electronic-Arts-Logo.svg.png" alt="">
+                        </div>
+                        <p>EA App</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="grid-item">
+                        <div class="icon">
+                          <img src="./assets/images/Electronic-Arts-Logo.svg.png" alt="">
+                        </div>
+                        <p>EA App</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="grid-item">
+                        <div class="icon">
+                          <img src="./assets/images/Electronic-Arts-Logo.svg.png" alt="">
+                        </div>
+                        <p>EA App</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="single-menu">
+                  <div class="dowpdown-title">
+                    <p>Prepaid Cards</p>
+                    <p><a href="#">View All</a></p>
+                  </div>
+                  <div class="grid-container">
+                    <a href="#">
+                      <div class="grid-item prepaid-card">
+                        <div class="icon">
+                          <img src="./assets/images/Blizzard.png" alt="">
+                        </div>
+                        <p>Stream Gift Card</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="grid-item prepaid-card">
+                        <div class="icon">
+                          <img src="./assets/images/Blizzard.png" alt="">
+                        </div>
+                        <p>Stream Gift Card</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="grid-item prepaid-card">
+                        <div class="icon">
+                          <img src="./assets/images/Blizzard.png" alt="">
+                        </div>
+                        <p>Stream Gift Card</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="header-right">
@@ -80,17 +173,23 @@
                 </div>
                 <h1>Starfield digital premium edition + early access</h1>
                 <div class="price">
-                    <span>-25%</span>
+                    <span class="discount">-25%</span>
                     <h2>74.89 &euro;</h2>
                 </div>
             </div>
             <div class="banner-content-right">
-                <a href="#">early access</a>
+                <a href="#" class="banner-btn"><i class="fa-solid fa-plus"></i> early access</a>
             </div>
         </div>
       </div>
     </section>
     <!-- BANNER -->
+
+    <!-- TRENDING -->
+    <section class="trending">
+
+    </section>
+    <!-- TRENDING -->
 
     <script src="./assets/js/script.js"></script>
   </body>
