@@ -161,8 +161,8 @@ img {
   top: 50%;
   transform: translate(0, -50%);
   border-radius: 100%;
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   font-size: 16px;
   border: none;
   background: #FF5400;
@@ -170,6 +170,18 @@ img {
   cursor: pointer;
   z-index: 9999;
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-content .header-middle .secondary-menu .search .cross-btn {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #33393D;
+  font-size: 20px;
+  display: none;
 }
 .header .header-content .header-middle .secondary-menu .dropdown-menu-card {
   padding: 20px;
@@ -260,7 +272,7 @@ img {
 .header .header-content .header-right .right-menu ul li a {
   color: #fff;
 }
-.header .header-content .header-right .right-menu ul li.dropdown {
+.header .header-content .header-right .right-menu ul li.dropdown-profile {
   width: 35px;
   height: 35px;
   background: #08141A;
@@ -269,7 +281,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.header .header-content .header-right .right-menu ul li.dropdown a {
+.header .header-content .header-right .right-menu ul li.dropdown-profile a {
   color: #295FB5;
 }
 
@@ -380,9 +392,17 @@ img {
   background-repeat: no-repeat;
   background-size: 12px 12px;
   background-color: rgba(0, 0, 0, 0.7450980392);
+  transition: all 0.5s;
 }
 .banner .banner-content .banner-content-right .banner-btn i {
   margin-right: 5px;
+}
+.banner .banner-content .banner-content-right .banner-btn:hover {
+  background: linear-gradient(to right, #fff 4px, transparent 4px) 0 0, linear-gradient(to right, #fff 4px, transparent 4px) 0 100%, linear-gradient(to left, #fff 4px, transparent 4px) 100% 0, linear-gradient(to left, #fff 4px, transparent 4px) 100% 100%, linear-gradient(to bottom, #fff 4px, transparent 4px) 0 0, linear-gradient(to bottom, #fff 4px, transparent 4px) 100% 0, linear-gradient(to top, #fff 4px, transparent 4px) 0 100%, linear-gradient(to top, #fff 4px, transparent 4px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-color: #ffffff;
+  color: #000;
 }
 .banner::after {
   content: "";
